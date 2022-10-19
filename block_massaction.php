@@ -135,7 +135,7 @@ EOB;
             );
 
             foreach ($actionicons as $action => $iconpath) {
-                $pixpath    = $OUTPUT->pix_url($iconpath);
+                $pixpath    = $OUTPUT->pix_icon($iconpath);
                 $actiontext = get_string('action_'.$action, 'block_massaction');
 
                 $this->content->text .= <<< EOB
